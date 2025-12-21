@@ -8,7 +8,7 @@ export default function Characters() {
             <Link to="/heroes">
             <div className="block heroes">
                 <div className="imageWrapper">
-                    <img src="src/public/heroes/M_knight.jpeg" alt="" />
+                    <img src="/heroes/M_knight.jpeg" alt="" />
                 </div>
                 <p>Heroes</p>
             </div>
@@ -16,7 +16,7 @@ export default function Characters() {
             <Link to="/bosses">
             <div className="block monsters">
                 <div className="imageWrapper">
-                    <img src="src/public/bosses/PRIMORDIAL ENT.jpeg" alt="" />
+                    <img src="/bosses/DARK PALLADIN.jpeg" alt="" />
                 </div>
                 <p>Bosses</p>
             </div>
