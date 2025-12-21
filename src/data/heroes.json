@@ -5,7 +5,7 @@
         "pers": "Mage",
         "mission": "Revive ancient words!",
         "desc": "Ancient runes call to the keeper of secrets!\nYour words are spells of stardust.\nRelease the power sleeping in the tablets\ndeep beneath the island of Zinland.",
-        "img": "src/public/heroes/M_mage.jpeg"
+        "img": "/heroes/M_mage.jpeg"
     },
     {
         "name": "STAR ARCHER",
@@ -13,7 +13,7 @@
         "pers": "Archer",
         "mission": "Find arrow-words!",
         "desc": "Your gaze is precise as a lunar arrow.\nEvery word flies without missing.\nFollow the paths of wind and silence,\nto catch elusive meanings.",
-        "img": "src/public/heroes/M_archer.jpeg"
+        "img": "/heroes/M_archer.jpeg"
     },
     {
         "name": "RUNIC KNIGHT",
@@ -21,7 +21,7 @@
         "pers": "Knight",
         "mission": "Forge words of honor!",
         "desc": "Your sword is a word, your shield is an oath.\nYou stand between chaos and meaning.\nWords will become armor of light\nin the battle for truth.",
-        "img": "src/public/heroes/M_knight.jpeg"
+        "img": "/heroes/M_knight.jpeg"
     },
     {
         "name": "SHADOW ROBBER",
