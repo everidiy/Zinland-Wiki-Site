@@ -1,26 +1,28 @@
 import '../styles/Characters.css';
-import { Link } from 'react-router-dom';
 
 export default function Characters() {
 
+    document.title = "Which side will you choose?"
+
     return (
         <div className="whichOne">
-            <Link to="/heroes">
-            <div className="block heroes">
-                <div className="imageWrapper">
-                    <img src="/heroes/M_knight.jpeg" alt="" />
+            <a href="/heroes" target="_blank" rel="noopener noreferrer">
+                <div className="block heroes">
+                    <div className="imageWrapper">
+                    <img src="/heroes/M_knight.jpeg" alt="Heroes" />
+                    </div>
+                    <p>Heroes</p>
                 </div>
-                <p>Heroes</p>
-            </div>
-            </Link>
-            <Link to="/bosses">
-            <div className="block monsters">
-                <div className="imageWrapper">
-                    <img src="/bosses/DARK PALLADIN.jpeg" alt="" />
+                </a>
+
+                <a href="/bosses" target="_blank" rel="noopener noreferrer">
+                <div className="block monsters">
+                    <div className="imageWrapper">
+                    <img src="/bosses/DARK PALLADIN.jpeg" alt="Bosses" />
+                    </div>
+                    <p>Bosses</p>
                 </div>
-                <p>Bosses</p>
-            </div>
-            </Link>
+            </a>
         </div>
     )
 }

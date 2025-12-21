@@ -36,7 +36,8 @@
     justify-content: center;
 }
 
-.choose p {
+.choose p, 
+.choose a {
     color: #9ca3af;
     cursor: pointer;
     font-size: clamp(16px, 3vw, 20px);
@@ -46,15 +47,18 @@
     font-weight: 500;
     transition: all 0.25s ease;
     position: relative;
+    text-decoration: none; 
 }
 
-.choose p:hover {
+.choose p:hover,
+.choose a:hover {
     color: #f9fafb;
     background: rgba(109, 40, 217, 0.15);
     transform: translateY(-1px);
 }
 
-.choose p::after {
+.choose p::after,
+.choose a::after {
     content: '';
     position: absolute;
     bottom: -6px;
@@ -66,9 +70,11 @@
     transition: width 0.35s ease;
 }
 
-.choose p:hover::after {
+.choose p:hover::after,
+.choose a:hover::after {
     width: 90%;
 }
+
 
 .random p {
     background: linear-gradient(135deg, #6d28d9, #4c1d95);

@@ -24,6 +24,8 @@ export default function Heroes() {
         document.body.style.overflow = 'auto'; 
     };
 
+    document.title = "Heroes of Zinland"
+
     return (
         <div className="heroes-page">
             <div className="heroes-page-header">

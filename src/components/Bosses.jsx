@@ -24,6 +24,8 @@ export default function Bosses() {
         document.body.style.overflow = 'auto'; 
     };
 
+    document.title = "Bosses of Zinland"
+
     return (
         <div className="bosses-page">
             <div className="bosses-page-header">

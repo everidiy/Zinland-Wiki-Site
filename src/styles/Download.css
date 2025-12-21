@@ -1,0 +1,90 @@
+.download-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 16, 32, 0.65); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(2px);
+}
+
+.download-modal {
+  background: #0b1020;
+  padding: 2rem 3rem;
+  border-radius: 16px;
+  text-align: center;
+  color: #f1f5f9;
+  position: relative;
+  max-width: 400px;
+  width: 90%;
+  box-shadow:
+    0 0 30px rgba(0, 0, 0, 0.6),
+    0 0 50px rgba(99, 102, 241, 0.2);
+  animation: popIn 0.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.download-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  color: #7c3aed;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.download-modal h2 {
+  font-size: clamp(20px, 4vw, 26px);
+  font-weight: 700;
+  background: linear-gradient(45deg, #8b5cf6, #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1.5rem;
+  text-shadow: 
+    0 0 20px rgba(139, 92, 246, 0.4),
+    0 0 40px rgba(139, 92, 246, 0.25);
+}
+
+.download-modal a {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  font-weight: 700;
+  font-size: 1rem;
+  background: linear-gradient(135deg, #7c3aed, #4f46e5);
+  color: #f8fafc;
+  border-radius: 14px;
+  text-decoration: none;
+  box-shadow:
+    0 6px 20px rgba(0, 0, 0, 0.4),
+    0 0 15px rgba(124, 58, 237, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+}
+
+.download-modal a:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #503481, #302c70);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5),
+              0 0 20px rgba(124, 58, 237, 0.7),
+              inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6) translateY(-30px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.05) translateY(5px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
