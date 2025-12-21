@@ -5,7 +5,7 @@
     "pers": "Mage",
     "mission": "Summon the abyssal forces!",
     "desc": "The Archimaess commands shadows and voids.\nHer power draws from the deepest darkness of the world.",
-    "img": "src/public/bosses/ARCHIMAESS OF THE ABYSS.jpeg"
+    "img": "/bosses/ARCHIMAESS OF THE ABYSS.jpeg"
   },
   {
     "name": "QUEEN OF THE ANCIENT FOREST",
@@ -13,7 +13,7 @@
     "pers": "Archer",
     "mission": "Rule the forest kingdoms!",
     "desc": "A regal ruler of the mystical woods.\nHer authority is absolute and revered.",
-    "img": "src/public/bosses/QUEEN OF THE ANCIENT FOREST.jpeg"
+    "img": "/bosses/QUEEN OF THE ANCIENT FOREST.jpeg"
   },
   {
     "name": "DARK PALLADIN",
@@ -21,7 +21,7 @@
     "pers": "Knight",
     "mission": "Wield shadowed justice!",
     "desc": "A paladin turned to darkness.\nJustice is his armor, vengeance his sword.",
-    "img": "src/public/bosses/DARK PALLADIN.jpeg"
+    "img": "/bosses/DARK PALLADIN.jpeg"
   },
   {
     "name": "KING OF SHADOWS",
@@ -29,7 +29,7 @@
     "pers": "Robber",
     "mission": "Rule the night!",
     "desc": "The master of darkness.\nHis domain is fear and hidden terror.",
-    "img": "src/public/bosses/KING OF SHADOWS.jpeg"
+    "img": "/bosses/KING OF SHADOWS.jpeg"
   },
   {
     "name": "MAESTRA OF SILENCE",
@@ -37,7 +37,7 @@
     "pers": "Bard",
     "mission": "Eliminate without a trace!",
     "desc": "A silent killer whose presence is barely felt.\nEvery move calculated to perfection.",
-    "img": "src/public/bosses/MAESTRA OF SILENCE.jpeg"
+    "img": "/bosses/MAESTRA OF SILENCE.jpeg"
   },
   {
     "name": "ALCHEMICAL SUPREME",
@@ -45,7 +45,7 @@
     "pers": "Alchemist",
     "mission": "Master the ultimate transmutations!",
     "desc": "A supreme alchemist who bends reality with potions and spells.\nNothing can escape the crucible of her mind.",
-    "img": "src/public/bosses/ALCHEMICAL SUPREME.jpeg"
+    "img": "/bosses/ALCHEMICAL SUPREME.jpeg"
   },
   {
     "name": "PRIMORDIAL ENT",
@@ -53,7 +53,7 @@
     "pers": "Druid",
     "mission": "Guard the ancient forests!",
     "desc": "A giant guardian of the forest.\nRoots and branches defend against all intruders.",
-    "img": "src/public/bosses/PRIMORDIAL ENT.jpeg"
+    "img": "/bosses/PRIMORDIAL ENT.jpeg"
   },
   {
     "name": "LICH-PATRIARCH",
@@ -61,7 +61,7 @@
     "pers": "Necromancer",
     "mission": "Control the undead legions!",
     "desc": "A powerful undead sorcerer.\nDeath obeys his command.",
-    "img": "src/public/bosses/LICH-PATRIARCH.jpeg"
+    "img": "/bosses/LICH-PATRIARCH.jpeg"
   },
   {
     "name": "MECHANOLORD",
@@ -69,7 +69,7 @@
     "pers": "Engineer",
     "mission": "Build unstoppable machines!",
     "desc": "Master of gears and engines.\nHis inventions crush all in their path.",
-    "img": "src/public/bosses/MECHANOLORD.jpeg"
+    "img": "/bosses/MECHANOLORD.jpeg"
   },
   {
     "name": "PSYCHE THE CONSUMER",
@@ -77,7 +77,7 @@
     "pers": "Psychic",
     "mission": "Feed on thoughts!",
     "desc": "She devours memories and emotions.\nNothing can escape her psychic hunger.",
-    "img": "src/public/bosses/PSYCHE THE CONSUMER.jpeg"
+    "img": "/bosses/PSYCHE THE CONSUMER.jpeg"
   },
   {
     "name": "SUPREME INQUISITOR",
@@ -85,7 +85,7 @@
     "pers": "Priest",
     "mission": "Judge without mercy!",
     "desc": "A relentless hunter of heretics.\nHis judgment is feared across the lands.",
-    "img": "src/public/bosses/SUPREME INQUISITOR.jpeg"
+    "img": "/bosses/SUPREME INQUISITOR.jpeg"
   },
   {
     "name": "WAR LEADER",
@@ -93,7 +93,7 @@
     "pers": "Berserker",
     "mission": "Lead armies to victory!",
     "desc": "A master tactician and fierce warrior.\nHis strategies dominate the battlefield.",
-    "img": "src/public/bosses/WAR LEADER.jpeg"
+    "img": "/bosses/WAR LEADER.jpeg"
   },
   {
     "name": "COMMANDER OF THE ORDER",
@@ -101,7 +101,7 @@
     "pers": "Paladin",
     "mission": "Lead with unbreakable discipline!",
     "desc": "A battle-hardened commander.\nEvery order is law, every move precise.",
-    "img": "src/public/bosses/COMMANDER OF THE ORDER.jpeg"
+    "img": "/bosses/COMMANDER OF THE ORDER.jpeg"
   },
   {
     "name": "ETERNAL WANDERER",
@@ -109,7 +109,7 @@
     "pers": "Pilgrim",
     "mission": "Travel endlessly, gather power!",
     "desc": "A wanderer who has seen ages pass.\nHis wisdom and power grow with every journey.",
-    "img": "src/public/bosses/ETERNAL WANDERER.jpeg"
+    "img": "/bosses/ETERNAL WANDERER.jpeg"
   },
   {
     "name": "HIGH CHANGER",
@@ -117,7 +117,7 @@
     "pers": "Shaman",
     "mission": "Change forms, change fates!",
     "desc": "Master of disguise and transformation.\nHer true form is a mystery even to herself.",
-    "img": "src/public/bosses/HIGH CHANGER.jpeg"
+    "img": "/bosses/HIGH CHANGER.jpeg"
   },
   {
     "name": "BLOODY QUEEN OF JESTERS",
@@ -125,7 +125,7 @@
     "pers": "Jester",
     "mission": "Spread chaos with laughter!",
     "desc": "A queen of illusions and mischief.\nHer jokes bite like daggers and her laughter echoes in nightmares.",
-    "img": "src/public/bosses/BLOODY QUEEN OF JESTERS.jpeg"
+    "img": "/bosses/BLOODY QUEEN OF JESTERS.jpeg"
   },
   {
     "name": "DARK SPIRITUALIST OF THE FOREST",
@@ -133,7 +133,7 @@
     "pers": "Elf",
     "mission": "Manipulate nature's spirits!",
     "desc": "Communes with corrupted spirits of the forest.\nNature bends to her dark will.",
-    "img": "src/public/bosses/DARK SPIRITUALIST OF THE FOREST.jpeg"
+    "img": "/bosses/DARK SPIRITUALIST OF THE FOREST.jpeg"
   },
   {
     "name": "GHOST CAPTAIN",
@@ -141,7 +141,7 @@
     "pers": "Pyrate",
     "mission": "Sail the seas of the dead!",
     "desc": "A ghostly captain with spectral crew.\nHis ship sails where mortals fear to go.",
-    "img": "src/public/bosses/GHOST CAPTAIN.jpeg"
+    "img": "/bosses/GHOST CAPTAIN.jpeg"
   },
   {
     "name": "ALCHEMICAL SUPREME",
@@ -149,7 +149,7 @@
     "pers": "Dwarf",
     "mission": "Master the ultimate transmutations!",
     "desc": "A supreme alchemist who bends reality with potions and spells.\nNothing can escape the crucible of her mind.",
-    "img": "src/public/bosses/ALCHEMICAL SUPREME.jpeg"
+    "img": "/bosses/ALCHEMICAL SUPREME.jpeg"
   },
   {
     "name": "HIGH GRASSHOCKER OF THE DEPTHS",
@@ -157,6 +157,6 @@
     "pers": "Beast",
     "mission": "Dominate the hidden depths!",
     "desc": "A creature from the deepest marshes.\nStrong, swift, and merciless.",
-    "img": "src/public/bosses/HIGH GRASSHOCKER OF THE DEPTHS.jpeg"
+    "img": "/bosses/HIGH GRASSHOCKER OF THE DEPTHS.jpeg"
   }
 ]
