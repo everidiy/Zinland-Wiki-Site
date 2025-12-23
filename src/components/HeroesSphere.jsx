@@ -18,7 +18,7 @@ const HeroesSphere = () => {
 
       if (width < 480) return 120
       if (width < 768) return 180
-      if (width < 1200) return 220
+      if (width < 1600) return 280
 
       return 450
     }

@@ -21,7 +21,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    gap: clamp(20px, 10vw, 220px);
+    gap: clamp(8px, 3vw, 70px);
     padding: 0 clamp(20px, 10vw, 120px);
 }
 
@@ -143,6 +143,6 @@ body {
     }
     
     .sphere {
-        margin-bottom: -15vw;
+        margin-bottom: -23vw;
     }
 }

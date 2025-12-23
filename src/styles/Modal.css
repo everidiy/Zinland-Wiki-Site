@@ -68,6 +68,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     gap: 2vw;
     margin-bottom: 20px;
     border-bottom: 1px solid rgba(109, 40, 217, 0.35);
@@ -75,6 +76,7 @@
 }
 
 .modal-image {
+    margin-top: 8px;
     width: clamp(200px, 40vw, 420px);
     height: clamp(200px, 40vw, 420px);
     border-radius: 10%;
@@ -93,6 +95,13 @@
     transition: transform 0.4s ease;
 }
 
+.modal-title  {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+    margin-bottom: 10px;
+}
+
 .modal-title h2 {
     text-align: center;
     font-size: clamp(24px, 5vw, 38px);
@@ -108,7 +117,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 1vw;
+    gap: 2vw;
     margin-top: 12px;
 }
 
@@ -136,7 +145,7 @@
 .modal-body {
     display: flex;
     flex-direction: column;
-    gap: clamp(16px, 2vw, 50px);
+    gap: clamp(10px, 0.5vw, 50px);
     justify-content: center;
     align-items: center;
 }
@@ -164,6 +173,26 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 16px;
+}
+
+.modal-words {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-words-text {
+    margin-top: 12px;
+    margin-bottom: 10px;
+}
+
+.word-badge {
+    background: rgba(100, 25, 221, 0.3);
+    padding: 4px 8px;
+    margin: 2px;
+    border-radius: 4px;
+    font-weight: bold;
 }
 
 .modal-mission p {
@@ -251,3 +280,24 @@
 
 .hero-name { color: #f1f5f9; font-size: 18px; font-weight: 600; }
 .hero-sex { color: #9ca3af; font-size: 13px; }
+
+@media (max-width: 768px) {
+    .word-badge {
+        font-size: 14px;
+        padding: 3px 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .word-badge {
+        font-size: 12px;
+        padding: 2px 5px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .word-badge {
+        font-size: 20px;
+        padding: 5px 10px;
+    }
+}

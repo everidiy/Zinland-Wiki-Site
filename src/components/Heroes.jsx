@@ -28,6 +28,7 @@ export default function Heroes() {
 
     return (
         <div className="heroes-page">
+            <button><a href="/characters">Back to Selection</a></button>
             <div className="heroes-page-header">
                 <h1>Heroes of Zinland</h1>
                 <p>Discover the brave heroes our world!</p>
@@ -60,14 +61,14 @@ export function HeroCard({ hero, openModal }) {
         <div className="hero-card" onClick={openModal}>
             <div className="hero-card-header">
                 <img src={img} alt={pers} />
-                <span className="hero-class-badge">{pers}</span>
+                <p className="hero-class-badge">{pers}</p>
             </div>
         </div>
     );
 }
 
 export function HeroModal({ hero, closeModal }) {
-    const { name, pers, sex, mission, desc, img } = hero;
+    const { name, pers, sex, mission, desc, img, words } = hero;
 
     return (
         <div className="modal-overlay" onClick={closeModal}>
@@ -95,6 +96,20 @@ export function HeroModal({ hero, closeModal }) {
                         <h3>Description</h3>
                         <div className="modal-desc-text">
                             {desc}
+                        </div>
+                    </div>
+                    <div className="modal-words">
+                        <h3>Words</h3>
+                        <div className="modal-words-text">
+                            {words && words.length > 0 ? (
+                                words.map((word, index) => (
+                                    <span key={index} className="word-badge">{
+                                        word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+                                    }</span>
+                                ))
+                            ) : (
+                                "No words yet!"
+                            )}
                         </div>
                     </div>
                 </div>

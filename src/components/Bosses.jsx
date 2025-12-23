@@ -28,6 +28,7 @@ export default function Bosses() {
 
     return (
         <div className="bosses-page">
+            <button><a href="/characters">Back to Selection</a></button>
             <div className="bosses-page-header">
                 <h1>Bosses of Zinland</h1>
                 <p>Discover the powerful bosses in our world!</p>
@@ -67,7 +68,7 @@ export function BossCard({ boss, openModal }) {
 }
 
 export function BossModal({ boss, closeModal }) {
-    const { name, pers, sex, mission, desc, img } = boss;
+    const { name, pers, sex, mission, desc, img, word } = boss;
 
     return (
         <div className="modal-overlay" onClick={closeModal}>
@@ -95,6 +96,18 @@ export function BossModal({ boss, closeModal }) {
                         <h3>Description</h3>
                         <div className="modal-desc-text">
                             {desc}
+                        </div>
+                    </div>
+                    <div className="modal-words">
+                        <h3>Word</h3>
+                        <div className="modal-words-text">
+                            {word ? (
+                                    <span className="word-badge">{
+                                        word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
+                                    }</span>
+                            ) : (
+                                "No words yet!"
+                            )}
                         </div>
                     </div>
                 </div>

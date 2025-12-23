@@ -5,7 +5,8 @@
     "pers": "Mage",
     "mission": "Revive ancient words!",
     "desc": "Ancient runes call to the keeper of secrets!\nYour words are spells of stardust.\nRelease the power sleeping in the tablets\ndeep beneath the island of Zinland.",
-    "img": "/heroes/M_mage.jpeg"
+    "img": "/heroes/M_mage.jpeg",
+    "words": ["RUNE", "GRIMOIRE", "MAGIC", "ARCANA", "AETHER"]
   },
   {
     "name": "STAR ARCHER",
@@ -13,7 +14,8 @@
     "pers": "Archer",
     "mission": "Find arrow-words!",
     "desc": "Your gaze is precise as a lunar arrow.\nEvery word flies without missing.\nFollow the paths of wind and silence,\nto catch elusive meanings.",
-    "img": "/heroes/M_archer.jpeg"
+    "img": "/heroes/M_archer.jpeg",
+    "words": ["SAGA", "PATH", "LUNAR", "ARROW", "BEASTS"]
   },
   {
     "name": "RUNIC KNIGHT",
@@ -21,7 +23,8 @@
     "pers": "Knight",
     "mission": "Forge words of honor!",
     "desc": "Your sword is a word, your shield is an oath.\nYou stand between chaos and meaning.\nWords will become armor of light\nin the battle for truth.",
-    "img": "/heroes/M_knight.jpeg"
+    "img": "/heroes/M_knight.jpeg",
+    "words": ["ARMOR", "OATH", "HERALD", "TOURNAMENT", "RELIC"]
   },
   {
     "name": "SHADOW ROBBER",
@@ -29,7 +32,8 @@
     "pers": "Robber",
     "mission": "Steal words from darkness!",
     "desc": "You steal not gold, but meanings.\nShadow is your ally, silence is your weapon.\nWords are hidden in pockets of oblivion,\nand only you can retrieve them.",
-    "img": "/heroes/M_robber.jpeg"
+    "img": "/heroes/M_robber.jpeg",
+    "words": ["SHADOW", "KEY", "ALIBI", "TRACE", "CIPHER"]
   },
   {
     "name": "BARD OF RESONANT WORDS",
@@ -37,7 +41,8 @@
     "pers": "Bard",
     "mission": "Sing words back to life!",
     "desc": "The lute plays on the strings of reality.\nEvery word is a note of fate.\nYou breathe life into forgotten stories,\nmaking the world listen.",
-    "img": "/heroes/M_bard.jpeg"
+    "img": "/heroes/M_bard.jpeg",
+    "words": ["BALLAD", "LUTE", "TALE", "MOTIF", "EPIC"]
   },
   {
     "name": "ALCHEMIST OF ETERNITY",
@@ -45,7 +50,8 @@
     "pers": "Alchemist",
     "mission": "Create perfect words!",
     "desc": "The crucible of your mind is boiling.\nLetters mix, birthing formulas.\nYou transform chaos into meaning,\nand words into the philosopher's stone.",
-    "img": "/heroes/W_alchemist.jpeg"
+    "img": "/heroes/W_alchemist.jpeg",
+    "words": ["REAGENT", "CRUCIBLE", "ELIXIR", "TRANSMUTATION", "CATALYST"]
   },
   {
     "name": "DRUID OF ANCIENT GROVES",
@@ -53,7 +59,8 @@
     "pers": "Druid",
     "mission": "Revive words of nature!",
     "desc": "Roots whisper truth to you.\nWords sprout like seeds.\nYou hear the language of forest and wind,\nand translate it to the world.",
-    "img": "/heroes/W_druid.jpeg"
+    "img": "/heroes/W_druid.jpeg",
+    "words": ["PRIEST", "PHYTONIA", "TOTEM", "SEASON", "HARMONY"]
   },
   {
     "name": "NECROMANCER OF OBLIVION",
@@ -61,7 +68,8 @@
     "pers": "Necromancer",
     "mission": "Resurrect buried words!",
     "desc": "You speak with what was forgotten.\nWords lie in graves of memory.\nYou raise them from silence,\ngranting them a second life.",
-    "img": "/heroes/W_necromancer.jpeg"
+    "img": "/heroes/W_necromancer.jpeg",
+    "words": ["LICH", "REQUIEM", "SARCOPHAGUS", "ECTOPLASM", "ABODE"]
   },
   {
     "name": "ENGINEER OF COSMOS",
@@ -69,7 +77,8 @@
     "pers": "Engineer",
     "mission": "Build word-mechanisms!",
     "desc": "Thoughts are your blueprints.\nWords are gears of meaning.\nYou assemble idea-constructions,\nmaking the world work.",
-    "img": "/heroes/W_engineer.jpeg"
+    "img": "/heroes/W_engineer.jpeg",
+    "words": ["GEAR", "STEAM ENGINE", "CONSTRUCTION", "INVENTION", "MECHANISM"]
   },
   {
     "name": "PSYCHIC OF MIND'S ABYSS",
@@ -77,7 +86,8 @@
     "pers": "Psychic",
     "mission": "Decipher mind-words!",
     "desc": "Thoughts are open to you.\nWords float in the subconscious.\nYou fish them from the depths,\nreading the mind like a book.",
-    "img": "/heroes/M_psycho.jpeg"
+    "img": "/heroes/M_psycho.jpeg",
+    "words": ["TELEPATH", "ILLUSION", "SUBCONSCIOUS", "MEDITATION", "PSYCHOSIS"]
   },
   {
     "name": "PRIEST OF LIGHT",
@@ -85,15 +95,17 @@
     "pers": "Priest",
     "mission": "Heal the world with words!",
     "desc": "Your faith is a source of power.\nWords heal and purify.\nYou carry light through darkness,\nexpelling silence.",
-    "img": "/heroes/W_priest.jpeg"
+    "img": "/heroes/W_priest.jpeg",
+    "words": ["DEMON", "HERESY", "INQUISITOR", "PROPHECY", "PRAYER"]
   },
   {
     "name": "BERSERKER OF FURY",
     "sex": "Man",
-    "pers": "Berserker",
+    "pers": "Berserk",
     "mission": "Break through darkness with words!",
     "desc": "Fury boils in your blood.\nWords burst out like a scream.\nYou shatter silence with force,\nbreaking barriers of meaning.",
-    "img": "/heroes/M_berserk.jpeg"
+    "img": "/heroes/M_berserk.jpeg",
+    "words": ["FURY", "BLOODBATH", "MANIAC", "REBELLION", "SLASH"]
   },
   {
     "name": "PALADIN OF OATH",
@@ -101,7 +113,8 @@
     "pers": "Paladin",
     "mission": "Defend words of truth!",
     "desc": "Your oath is unbreakable.\nWords are law and protection.\nYou stand for truth,\nnot allowing it to fall.",
-    "img": "/heroes/W_paladin.jpeg"
+    "img": "/heroes/W_paladin.jpeg",
+    "words": ["LIGHT", "HONOR", "VOW", "DUTY", "VALOR"]
   },
   {
     "name": "PILGRIM OF MEANINGS",
@@ -109,7 +122,8 @@
     "pers": "Pilgrim",
     "mission": "Walk the path of words!",
     "desc": "Your journey is more important than the destination.\nEvery word is a step.\nYou collect truths along the road,\ncarrying them through the world.",
-    "img": "/heroes/W_pilgrim.jpeg"
+    "img": "/heroes/W_pilgrim.jpeg",
+    "words": ["PATH", "SANCTUARY", "TRIAL", "FAITH", "WANDERING"]
   },
   {
     "name": "SHAMAN OF SPIRITS",
@@ -117,7 +131,8 @@
     "pers": "Shaman",
     "mission": "Restore world connections!",
     "desc": "You hear voices of worlds.\nWords are threads between realities.\nYou weave them into a whole,\nconnecting living and otherworldly.",
-    "img": "/heroes/W_shaman.jpeg"
+    "img": "/heroes/W_shaman.jpeg",
+    "words": ["DRUM", "RITUAL", "TALISMAN", "FATE", "MYSTERY"]
   },
   {
     "name": "JESTER OF ILLUSIONS",
@@ -125,7 +140,8 @@
     "pers": "Jester",
     "mission": "Reveal illusions with words!",
     "desc": "Your mask hides many faces.\nWords dance between truth and deception.\nYou change reality with mind-games,\nwhere every laugh is a conspiracy.",
-    "img": "/heroes/M_jester.jpeg"
+    "img": "/heroes/M_jester.jpeg",
+    "words": ["ILLUSION", "LAUGH", "MASK", "DECEPTION", "PERFORMANCE"]
   },
   {
     "name": "ELF OF ANCIENT FOREST",
@@ -133,7 +149,8 @@
     "pers": "Elf",
     "mission": "Preserve ancient word-knowledge!",
     "desc": "The song of centuries flows in your veins.\nWords fly like arrows of truth.\nYou hear whispers of roots and wind,\nprotecting nature's secrets.",
-    "img": "/heroes/W_elf.jpeg"
+    "img": "/heroes/W_elf.jpeg",
+    "words": ["WONDERS", "SETTLEMENT", "ANTIQUE", "CALM", "SILENCE"]
   },
   {
     "name": "PIRATE OF SEA ROUTES",
@@ -141,7 +158,8 @@
     "pers": "Pirate",
     "mission": "Find word-treasure!",
     "desc": "Your saber is but an extension of will.\nWords are maps to hidden treasures.\nYou sail the ocean of meanings,\nwhere every storm is a challenge.",
-    "img": "/heroes/M_pyrate.jpeg"
+    "img": "/heroes/M_pyrate.jpeg",
+    "words": ["SEA", "SABER", "TREASURE", "HELMSMAN", "STORM"]
   },
   {
     "name": "DWARF OF DEEP CAVES",
@@ -149,7 +167,8 @@
     "pers": "Dwarf",
     "mission": "Forge truth from words!",
     "desc": "Your beard is a chronicle of stone.\nWords are forged in ancestral forges.\nYou read runes in the rock,\nkeeping secrets of the underground kingdom.",
-    "img": "/heroes/M_dwarf.jpeg"
+    "img": "/heroes/M_dwarf.jpeg",
+    "words": ["MOUNTAIN", "HAMMER", "ORE", "ALE", "CAVE"]
   },
   {
     "name": "BEAST OF PRIMAL FORCE",
@@ -157,6 +176,7 @@
     "pers": "Beast",
     "mission": "Survive in the world of words!",
     "desc": "Your claws embody instinct.\nWords are roars, echoes of wild nature.\nYou sense fear and hunt,\nliving by pack laws.",
-    "img": "/heroes/W_beast.jpeg"
+    "img": "/heroes/W_beast.jpeg",
+    "words": ["CLAW", "INSTINCT", "PACK", "DEN", "WILDNESS"]
   }
 ]

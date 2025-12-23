@@ -1,28 +1,28 @@
+import { Link } from 'react-router-dom';
 import '../styles/Characters.css';
 
 export default function Characters() {
-
-    document.title = "Which side will you choose?"
+    document.title = "Which side will you choose?";
 
     return (
         <div className="whichOne">
-            <a href="/heroes" target="_blank" rel="noopener noreferrer">
+            <Link to="/heroes">
                 <div className="block heroes">
                     <div className="imageWrapper">
-                    <img src="/heroes/M_knight.jpeg" alt="Heroes" />
+                        <img src="/heroes/M_knight.jpeg" alt="Heroes" />
                     </div>
                     <p>Heroes</p>
                 </div>
-                </a>
+            </Link>
 
-                <a href="/bosses" target="_blank" rel="noopener noreferrer">
+            <Link to="/bosses">
                 <div className="block monsters">
                     <div className="imageWrapper">
-                    <img src="/bosses/DARK PALLADIN.jpeg" alt="Bosses" />
+                        <img src="/bosses/DARK PALLADIN.jpeg" alt="Bosses" />
                     </div>
                     <p>Bosses</p>
                 </div>
-            </a>
+            </Link>
         </div>
-    )
+    );
 }
