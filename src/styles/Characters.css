@@ -1,3 +1,38 @@
+.characters-page {
+  min-height: 100vh;
+  position: relative;
+  background:
+    radial-gradient(circle at top, #111827 0%, #0b1020 60%, #070b18 100%);
+}
+
+.back-link {
+    position: fixed;
+    top: 24px;
+    left: 32px;
+
+    font-size: 15px;
+    font-weight: 600;
+    color: #c7d2fe;
+    text-decoration: none;
+
+    padding: 10px 16px;
+    border-radius: 10px;
+
+    background: rgba(17, 24, 39, 0.75);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(124, 58, 237, 0.35);
+
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.back-link:hover {
+  color: #fff;
+  border-color: rgba(124, 58, 237, 0.9);
+  box-shadow: 0 0 15px rgba(124, 58, 237, 0.4);
+  transform: translateY(-2px);
+}
+
 .whichOne {
     min-height: 100vh;
     display: flex;
