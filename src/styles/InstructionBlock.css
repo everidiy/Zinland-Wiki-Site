@@ -59,6 +59,8 @@
 
 @media (max-width: 768px) {
   .instrucntion-block {
+    margin-left: 20px;
+    margin-right: 20px;
     flex-direction: column !important;
     text-align: center;
     padding: 20px 15px;
