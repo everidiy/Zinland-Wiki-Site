@@ -7,6 +7,9 @@ import Bosses from './components/Bosses';
 import HeroesSphere from './components/HeroesSphere';
 import Hero from './components/Hero';
 import Boss from './components/Boss';
+import InstructionBlock from './components/InstructionBlock';
+import InstructionData from './data/instructionBlocks.json';
+import Footer from './components/Footer';
 
 import './App.css'
 import Title from './components/Title';
@@ -27,6 +30,20 @@ function App() {
                   <HeroesSphere />
                 </div>
               </div>
+              <div className="instruction">
+                <h2>How to play?</h2>
+
+                {InstructionData.map((block, i) => (
+                  <InstructionBlock 
+                    key={i}
+                    text={block.text}
+                    image={block.image} 
+                    reverse={block.reverse}
+                  />
+                ))}
+              </div>
+
+              <Footer />
             </>
           } />
 

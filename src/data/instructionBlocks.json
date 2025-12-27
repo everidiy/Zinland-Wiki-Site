@@ -1,0 +1,42 @@
+[
+  {
+    "text": "To start playing, you just need to press any button when launching the .exe file.",
+    "image": "/instruction/1.png",
+    "reverse": false
+  },
+  {
+    "text": "Next, a narrator will greet you and ask if you are ready to begin your journey. Choosing Yes starts the game, No exits.",
+    "image": "/instruction/2.png",
+    "reverse": true
+  },
+  {
+    "text": "When selecting a class, remember a few rules:\n- 0 – return to the main menu to choose an answer.\n- 1-20 – select a specific character class to play.\nEach character has five words, five monsters, and a boss with a final word.\nUse the arrow keys on the numpad to scroll through characters.",
+    "image": "/instruction/3.png",
+    "reverse": false
+  },
+  {
+    "text": "Enter any number, and your hero’s intro screen will appear. Press any key to see a fake gameplay loading screen.",
+    "image": "/instruction/4.png",
+    "reverse": true
+  },
+  {
+    "text": "Then the game rules will be shown – how many words and monsters you’ll face, what to expect, etc. You’ll experience all of this in the game itself – this is just a guide.",
+    "image": "/instruction/5.png",
+    "reverse": false
+  },
+  {
+    "text": "The main gameplay begins: word guessing. You have 5 mistakes allowed, and if you guess the word correctly, you defeat the monster and move to the next word-monster pair. If you fail to guess the word, you lose and start over from character selection.",
+    "image": "/instruction/6.png",
+    "reverse": true
+  },
+  {
+    "text": "After guessing all words of your class, you face the final boss with an ultra-long word. Winning completes your class run and returns you to the character selection menu.",
+    "image": "/instruction/7.png",
+    "reverse": false
+  },
+  {
+    "text": "Good luck playing my game!",
+    "image": "/instruction/8.png",
+    "reverse": true
+  }
+]
