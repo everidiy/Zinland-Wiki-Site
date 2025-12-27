@@ -6,6 +6,7 @@ import Heroes from './components/Heroes';
 import Bosses from './components/Bosses';
 import HeroesSphere from './components/HeroesSphere';
 import Hero from './components/Hero';
+import Boss from './components/Boss';
 
 import './App.css'
 import Title from './components/Title';
@@ -43,6 +44,10 @@ function App() {
 
           <Route path="/heroes/:pers" element={
             <Hero />
+          }></Route>
+
+          <Route path="/bosses/:pers" element={
+            <Boss />
           }></Route>
         </Routes>
       </div>

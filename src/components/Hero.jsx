@@ -2,7 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import heroesData from '../data/heroes.json';
 import '../styles/HeroPage.css';
 
-export default function Pers() {
+export default function Hero() {
     const { pers } = useParams();
     const hero = heroesData.find(h => h.pers.toLowerCase() === pers.toLowerCase());
 
@@ -12,7 +12,7 @@ export default function Pers() {
 
     return (
         <div className={`pers-page ${pers.toLowerCase()}`}>
-            <Link to="/heroes" className="back-btn">← Back to Heroes</Link>
+            <Link to="/heroes" className="back-btn">←</Link>
             
             <header className="pers-header">
                 <img className="pers-image" src={img} alt={name} />

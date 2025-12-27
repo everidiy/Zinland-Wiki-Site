@@ -93,12 +93,6 @@
     
 }
 
-.hero-card:hover {
-    transform: translateY(-10px);
-    border-color: rgba(16, 185, 129, 0.6);
-    box-shadow: 0 25px 55px rgba(0,0,0,0.6), 0 0 30px rgba(16,185,129,0.25);
-}
-
 .hero-card-header {
     display: flex;
     flex-direction: column;

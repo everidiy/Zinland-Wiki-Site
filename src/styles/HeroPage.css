@@ -25,8 +25,8 @@
     margin-bottom: 20px;
     padding: 10px 22px;
     border-radius: 16px;
-    background: linear-gradient(135deg, #28a376, #0c7e58); 
-    color: #fff;
+    background: linear-gradient(90deg, var(--hero-accent), var(--hero-border));
+    color: var(--hero-bg);
     font-weight: 700;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -40,6 +40,7 @@
 .pers-header {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     gap: 24px;
     align-items: center;
     justify-content: center;
@@ -48,7 +49,6 @@
     background: var(--hero-bg);
     border: 2px solid var(--hero-border);
     border-radius: 24px;
-    box-shadow: 0 0 8px var(--hero-accent);;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -74,6 +74,7 @@
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .pers-class {
@@ -149,7 +150,6 @@
 }
 
 @media (max-width: 768px) {
-    .pers-header { flex-direction: column; align-items: center; }
     .pers-image { width: 220px; height: 220px; }
     .pers-name { text-align: center; }
     .pers-meta { justify-content: center; }
@@ -171,90 +171,90 @@
 }
 
 
-
+/* 
 
 .mage {
-    --hero-bg: rgba(30, 5, 50, 0.85);
-    --hero-border: #9333ea;
-    --hero-text: #e0d7ff;
-    --hero-accent: #a855f7;
+    --hero-bg: rgba(40, 15, 60, 0.85);
+    --hero-border: #7b4dbf;
+    --hero-text: #cbbaff;
+    --hero-accent: #9f5cf7;
 }
 
 .archer {
-    --hero-bg: rgba(25, 51, 34, 0.85);
-    --hero-border: #10b981;
-    --hero-text: #d1fae5;
-    --hero-accent: #34d399;
+    --hero-bg: rgba(25, 45, 34, 0.85);
+    --hero-border: #0f9a6d;
+    --hero-text: #b7f2dc;
+    --hero-accent: #2db28f;
 }
 
 .knight {
-    --hero-bg: rgba(5, 25, 35, 0.85);
-    --hero-border: #06b6d4;
-    --hero-text: #cffafe;
-    --hero-accent: #22d3ee;
+    --hero-bg: rgba(10, 20, 35, 0.85);
+    --hero-border: #0ca2b8;
+    --hero-text: #a0f0f5;
+    --hero-accent: #1ec6e8;
 }
 
 .robber {
-    --hero-bg: rgba(20, 20, 20, 0.85);
-    --hero-border: #374151;
-    --hero-text: #d1d5db;
+    --hero-bg: rgba(25, 25, 25, 0.85);
+    --hero-border: #4b5563;
+    --hero-text: #c7c7c7;
     --hero-accent: #6b7280;
 }
 
 .bard {
-    --hero-bg: rgba(35, 30, 0, 0.85);
-    --hero-border: #facc15;
-    --hero-text: #fef9c3;
-    --hero-accent: #fde68a;
+    --hero-bg: rgba(35, 30, 10, 0.85);
+    --hero-border: #d4c35e;
+    --hero-text: #f7f1b0;
+    --hero-accent: #f1e38c;
 }
 
 .alchemist {
-    --hero-bg: rgba(40, 5, 50, 0.85);
-    --hero-border: #8b5cf6;
-    --hero-text: #e9d5ff;
-    --hero-accent: #c084fc;
+    --hero-bg: rgba(40, 10, 50, 0.85);
+    --hero-border: #7c4cf6;
+    --hero-text: #dcc3ff;
+    --hero-accent: #b784fc;
 }
 
 .druid {
     --hero-bg: rgba(0, 20, 0, 0.85);
-    --hero-border: #065f46;
-    --hero-text: #d9f99d;
-    --hero-accent: #4ade80;
+    --hero-border: #047353;
+    --hero-text: #cdeaa5;
+    --hero-accent: #3fc67a;
 }
 
 .necromancer {
     --hero-bg: rgba(35, 0, 0, 0.85);
-    --hero-border: #b91c1c;
-    --hero-text: #fecaca;
-    --hero-accent: #f87171;
+    --hero-border: #9e1a1a;
+    --hero-text: #f5baba;
+    --hero-accent: #e87a7a;
 }
 
 .engineer {
     --hero-bg: rgba(35, 35, 0, 0.85);
-    --hero-border: #b45309;
-    --hero-text: #fef3c7;
-    --hero-accent: #fbbf24;
+    --hero-border: #b2870a;
+    --hero-text: #f7ecc4;
+    --hero-accent: #f0c948;
 }
 
 .psychic {
     --hero-bg: rgba(0, 0, 35, 0.85);
-    --hero-border: #3b82f6;
-    --hero-text: #bfdbfe;
-    --hero-accent: #60a5fa;
+    --hero-border: #2563eb;
+    --hero-text: #a7c9ff;
+    --hero-accent: #4f90fa;
 }
 
 .priest {
-    --hero-bg: rgba(56, 56, 56, 0.85);
-    --hero-border: #f3f4f6;
-    --hero-text: #ffffff;
-    --hero-accent: #e5e7eb;
+    --hero-bg: rgba(50, 50, 50, 0.85);
+    --hero-border: #d1d5db;
+    --hero-text: #e5e7eb;
+    --hero-accent: #cfd3d6;
 }
 
 .berserk {
     --hero-bg: rgba(35, 0, 0, 0.85);
-    --hero-border: #dc2626;
-    --hero-text: #fee2e2;
-    --hero-accent: #f87171;
+    --hero-border: #b63a3a;
+    --hero-text: #f7d7d7;
+    --hero-accent: #e87a7a;
 }
 
 .paladin {
@@ -266,8 +266,8 @@
 
 .pilgrim {
     --hero-bg: rgba(0, 30, 0, 0.85);
-    --hero-border: #10b981;
-    --hero-text: #d1fae5;
+    --hero-border: #0f9a6d;
+    --hero-text: #c7f2dc;
     --hero-accent: #34d399;
 }
 
@@ -280,35 +280,36 @@
 
 .jester {
     --hero-bg: rgba(35, 35, 0, 0.85);
-    --hero-border: #b45309;
-    --hero-text: #fef3c7;
-    --hero-accent: #fbbf24;
+    --hero-border: #b2870a;
+    --hero-text: #f7ecc4;
+    --hero-accent: #f0c948;
 }
 
 .elf {
     --hero-bg: rgba(0, 20, 0, 0.85);
-    --hero-border: #065f46;
-    --hero-text: #d9f99d;
+    --hero-border: #047353;
+    --hero-text: #cdeaa5;
     --hero-accent: #4ade80;
 }
 
 .pirate {
     --hero-bg: rgba(0, 0, 35, 0.85);
-    --hero-border: #3b82f6;
-    --hero-text: #bfdbfe;
-    --hero-accent: #60a5fa;
+    --hero-border: #2563eb;
+    --hero-text: #a7c9ff;
+    --hero-accent: #4f90fa;
 }
 
 .dwarf {
     --hero-bg: rgba(20, 20, 20, 0.85);
-    --hero-border: #374151;
-    --hero-text: #d1d5db;
+    --hero-border: #4b5563;
+    --hero-text: #c7c7c7;
     --hero-accent: #6b7280;
 }
 
 .beast {
     --hero-bg: rgba(35, 0, 0, 0.85);
-    --hero-border: #b91c1c;
-    --hero-text: #fecaca;
-    --hero-accent: #f87171;
-}
+    --hero-border: #9e1a1a;
+    --hero-text: #f5baba;
+    --hero-accent: #e87a7a;
+} */
+

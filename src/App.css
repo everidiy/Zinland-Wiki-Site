@@ -11,8 +11,6 @@ body {
     color: #f1f5f9;
 }
 
-/* ===== HERO ===== */
-
 .main {
     min-height: calc(100vh - 100px);
     width: 100%;
@@ -24,8 +22,6 @@ body {
     gap: clamp(8px, 3vw, 70px);
     padding: 0 clamp(20px, 10vw, 120px);
 }
-
-/* ===== TITLE ===== */
 
 .title {
     width: clamp(280px, 50vw, 900px);
@@ -59,8 +55,6 @@ body {
     text-align: center;
 }
 
-/* ===== BUTTON ===== */
-
 .play-btn {
     margin-top: clamp(16px, 3vw, 20px);
     padding: clamp(12px, 3vw, 18px) clamp(32px, 8vw, 56px);
@@ -91,8 +85,6 @@ body {
 .play-btn:active {
     transform: translateY(0);
 }
-
-/* ===== SPHERE ===== */
 
 .sphere {
     width: clamp(260px, 60vw, 720px);
@@ -131,8 +123,6 @@ body {
     text-shadow: 0 0 18px rgba(139, 92, 246, 0.7);
     cursor: pointer;
 }
-
-/* ===== MOBILE ===== */
 
 @media (max-width: 900px) {
     .main {
