@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     min-height: 100vh;
     background: radial-gradient(circle at top, #0b1020 0%, #050814 100%);
@@ -131,12 +135,6 @@ body {
     margin: 40px 0;
     padding: 40px 20px;
     border-radius: 16px;
-    color: #e5e7eb;
-}
-
-.instruction .ps {
-    text-align: center;
-    font-size: 20px;
     color: #e5e7eb;
 }
 

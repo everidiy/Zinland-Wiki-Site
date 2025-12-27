@@ -30,7 +30,7 @@ function App() {
                   <HeroesSphere />
                 </div>
               </div>
-              <div className="instruction">
+              <div className="instruction" id="instrction">
                 <h2>How to play?</h2>
 
                 {InstructionData.map((block, i) => (
