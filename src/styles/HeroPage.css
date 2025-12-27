@@ -1,0 +1,314 @@
+:root {
+    --hero-bg: rgba(7,11,24,0.9);
+    --hero-border: #10b981;
+    --hero-text: #d1fae5;
+    --hero-accent: #10b981;
+}
+
+.pers-page {
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:
+        radial-gradient(circle at top, rgba(5, 150, 105, 0.1), transparent 45%),
+        radial-gradient(circle at top, #0b1020 0%, #070b18 55%, #050811 100%);
+    color: var(--hero-text);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    animation: fadeIn 0.6s ease forwards;
+}
+
+.back-btn {
+    align-self: flex-start;
+    margin-bottom: 20px;
+    padding: 10px 22px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #28a376, #0c7e58); 
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 8px rgba(0, 0, 35, 0.85);
+}
+
+.back-btn:hover {
+    transform: translateY(-2px);
+}
+
+.pers-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    padding: 30px;
+    background: var(--hero-bg);
+    border: 2px solid var(--hero-border);
+    border-radius: 24px;
+    box-shadow: 0 0 8px var(--hero-accent);;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pers-image {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 4px solid var(--hero-border);
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.pers-name {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 900;
+    background: linear-gradient(90deg, var(--hero-accent), var(--hero-border));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 12px;
+}
+
+.pers-meta {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.pers-class {
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    background: linear-gradient(135deg, var(--hero-accent), var(--hero-border));
+    color: var(--hero-bg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pers-sex {
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--hero-text);
+}
+
+.pers-body {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.pers-section {
+    background: var(--hero-bg);
+    border: 2px solid var(--hero-border);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pers-section h2 {
+    font-size: clamp(1.5rem, 4vw, 1.8rem);
+    color: var(--hero-accent);
+    margin-bottom: 16px;
+}
+
+.pers-section h2::before {
+    content: "▸";
+    margin-right: 8px;
+    color: var(--hero-accent);
+}
+
+.pers-section p {
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
+    line-height: 1.7;
+    color: var(--hero-text);
+}
+
+.pers-words {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.word-badge {
+    background: linear-gradient(135deg, var(--hero-accent), var(--hero-border));
+    color: var(--hero-bg);
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .pers-header { flex-direction: column; align-items: center; }
+    .pers-image { width: 220px; height: 220px; }
+    .pers-name { text-align: center; }
+    .pers-meta { justify-content: center; }
+}
+
+@media (max-width: 480px) {
+    .pers-image { width: 180px; height: 180px; }
+    .pers-section { padding: 20px; }
+    .word-badge { padding: 4px 10px; font-size: 0.8rem; }
+}
+
+.pers-notfound {
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #ef4444;
+}
+
+
+
+
+.mage {
+    --hero-bg: rgba(30, 5, 50, 0.85);
+    --hero-border: #9333ea;
+    --hero-text: #e0d7ff;
+    --hero-accent: #a855f7;
+}
+
+.archer {
+    --hero-bg: rgba(25, 51, 34, 0.85);
+    --hero-border: #10b981;
+    --hero-text: #d1fae5;
+    --hero-accent: #34d399;
+}
+
+.knight {
+    --hero-bg: rgba(5, 25, 35, 0.85);
+    --hero-border: #06b6d4;
+    --hero-text: #cffafe;
+    --hero-accent: #22d3ee;
+}
+
+.robber {
+    --hero-bg: rgba(20, 20, 20, 0.85);
+    --hero-border: #374151;
+    --hero-text: #d1d5db;
+    --hero-accent: #6b7280;
+}
+
+.bard {
+    --hero-bg: rgba(35, 30, 0, 0.85);
+    --hero-border: #facc15;
+    --hero-text: #fef9c3;
+    --hero-accent: #fde68a;
+}
+
+.alchemist {
+    --hero-bg: rgba(40, 5, 50, 0.85);
+    --hero-border: #8b5cf6;
+    --hero-text: #e9d5ff;
+    --hero-accent: #c084fc;
+}
+
+.druid {
+    --hero-bg: rgba(0, 20, 0, 0.85);
+    --hero-border: #065f46;
+    --hero-text: #d9f99d;
+    --hero-accent: #4ade80;
+}
+
+.necromancer {
+    --hero-bg: rgba(35, 0, 0, 0.85);
+    --hero-border: #b91c1c;
+    --hero-text: #fecaca;
+    --hero-accent: #f87171;
+}
+
+.engineer {
+    --hero-bg: rgba(35, 35, 0, 0.85);
+    --hero-border: #b45309;
+    --hero-text: #fef3c7;
+    --hero-accent: #fbbf24;
+}
+
+.psychic {
+    --hero-bg: rgba(0, 0, 35, 0.85);
+    --hero-border: #3b82f6;
+    --hero-text: #bfdbfe;
+    --hero-accent: #60a5fa;
+}
+
+.priest {
+    --hero-bg: rgba(56, 56, 56, 0.85);
+    --hero-border: #f3f4f6;
+    --hero-text: #ffffff;
+    --hero-accent: #e5e7eb;
+}
+
+.berserk {
+    --hero-bg: rgba(35, 0, 0, 0.85);
+    --hero-border: #dc2626;
+    --hero-text: #fee2e2;
+    --hero-accent: #f87171;
+}
+
+.paladin {
+    --hero-bg: rgba(0, 25, 25, 0.85);
+    --hero-border: #0f766e;
+    --hero-text: #cffafe;
+    --hero-accent: #22d3ee;
+}
+
+.pilgrim {
+    --hero-bg: rgba(0, 30, 0, 0.85);
+    --hero-border: #10b981;
+    --hero-text: #d1fae5;
+    --hero-accent: #34d399;
+}
+
+.shaman {
+    --hero-bg: rgba(0, 0, 35, 0.85);
+    --hero-border: #1e40af;
+    --hero-text: #bfdbfe;
+    --hero-accent: #60a5fa;
+}
+
+.jester {
+    --hero-bg: rgba(35, 35, 0, 0.85);
+    --hero-border: #b45309;
+    --hero-text: #fef3c7;
+    --hero-accent: #fbbf24;
+}
+
+.elf {
+    --hero-bg: rgba(0, 20, 0, 0.85);
+    --hero-border: #065f46;
+    --hero-text: #d9f99d;
+    --hero-accent: #4ade80;
+}
+
+.pirate {
+    --hero-bg: rgba(0, 0, 35, 0.85);
+    --hero-border: #3b82f6;
+    --hero-text: #bfdbfe;
+    --hero-accent: #60a5fa;
+}
+
+.dwarf {
+    --hero-bg: rgba(20, 20, 20, 0.85);
+    --hero-border: #374151;
+    --hero-text: #d1d5db;
+    --hero-accent: #6b7280;
+}
+
+.beast {
+    --hero-bg: rgba(35, 0, 0, 0.85);
+    --hero-border: #b91c1c;
+    --hero-text: #fecaca;
+    --hero-accent: #f87171;
+}

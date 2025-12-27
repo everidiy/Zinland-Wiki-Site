@@ -8,7 +8,7 @@
         radial-gradient(circle at top, #111827 0%, #0b1020 55%, #070b18 100%);
 }
 
-.heroes-page button a {
+.heroes-page button a, .heroes-page a {
     text-decoration: none;
     color: inherit;
 }
@@ -90,6 +90,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .hero-card:hover {
@@ -103,21 +104,18 @@
     flex-direction: column;
     align-items: center;
     gap: clamp(18px, 2vw, 30px);
+    width: 100%;
 }
 
 .hero-card-header img {
-    width: clamp(140px, 30vw, 180px);
-    height: clamp(140px, 30vw, 180px);
+    width: 100%; 
+    height: 100%;
     border-radius: 10%;
-    object-fit: cover;
+    object-fit: contain;
     border: 2px solid rgba(16, 185, 129, 0.6);
     box-shadow: 0 10px 35px rgba(0,0,0,0.7), 0 0 25px rgba(9,58,41,0.35);
-    transition: 0.3s ease;
-}
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-.hero-card:hover .hero-card-header img {
-    transform: scale(1.01);
-    box-shadow: 0 10px 35px rgba(0,0,0,0.7), 0 0 25px rgba(16,185,129,0.35);
 }
 
 /* Badge */

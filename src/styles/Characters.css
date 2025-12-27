@@ -1,13 +1,18 @@
+/* ===============================
+   LAYOUT
+================================ */
 .whichOne {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5vw; /* плавный отступ */
-    padding: 5vw;
+    flex-wrap: wrap;
+
+    gap: 48px;
+    padding: 64px;
+
     background: radial-gradient(circle at top, #111827 0%, #0b1020 60%, #070b18 100%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    flex-wrap: wrap; /* карточки переносятся на маленьких экранах */
 }
 
 .whichOne a {
@@ -15,27 +20,36 @@
     color: inherit;
 }
 
-/* CARD */
+/* ===============================
+   CARD
+================================ */
 .block {
-    width: clamp(260px, 22vw, 340px); /* адаптивная ширина */
-    height: clamp(360px, 28vw, 440px); /* адаптивная высота */
-    padding: clamp(20px, 3vw, 32px);
-    border-radius: 20px;
-    border: 1px solid rgba(109, 40, 217, 0.35);
-    background: rgba(17, 24, 39, 0.85);
-    backdrop-filter: blur(14px);
+    width: 280px;
+    height: 360px;
+    padding: 24px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: clamp(18px, 3vw, 26px);
+    gap: 20px;
+
+    border-radius: 18px;
+    border: 1px solid rgba(109, 40, 217, 0.35);
+    background: rgba(17, 24, 39, 0.85);
+    backdrop-filter: blur(14px);
+
     box-shadow:
         0 12px 35px rgba(0, 0, 0, 0.6),
         0 0 25px rgba(109, 40, 217, 0.08);
-    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
     position: relative;
     overflow: hidden;
     cursor: pointer;
+
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 0.4s ease,
+                border-color 0.4s ease;
 }
 
 .block::before {
@@ -44,40 +58,40 @@
     inset: 0;
     background: radial-gradient(circle at top, rgba(124, 58, 237, 0.25), transparent 70%);
     opacity: 0;
-    transition: 0.4s ease;
+    transition: opacity 0.4s ease;
 }
 
-.block:hover::before {
-    opacity: 1;
+@media (hover: hover) {
+    .block:hover::before {
+        opacity: 1;
+    }
+
+    .block:hover {
+        transform: translateY(-12px);
+        border-color: rgba(124, 58, 237, 0.85);
+        box-shadow:
+            0 25px 55px rgba(0, 0, 0, 0.75),
+            0 0 40px rgba(124, 58, 237, 0.3);
+    }
 }
 
-.block:hover {
-    transform: translateY(-12px);
-    border-color: rgba(124, 58, 237, 0.85);
-    box-shadow:
-        0 25px 55px rgba(0, 0, 0, 0.75),
-        0 0 40px rgba(124, 58, 237, 0.3);
-}
-
-.block:hover .imageWrapper {
-    border-color: rgba(124, 58, 237, 0.85);
-    box-shadow:
-        0 15px 45px rgba(0, 0, 0, 0.8),
-        0 0 40px rgba(124, 58, 237, 0.6);
-}
-
-/* IMAGE */
+/* ===============================
+   IMAGE
+================================ */
 .imageWrapper {
-    width: clamp(140px, 18vw, 190px);
-    height: clamp(140px, 18vw, 190px);
+    width: 150px;
+    height: 150px;
+
     border-radius: 50%;
     overflow: hidden;
     border: 2px solid rgba(255, 255, 255, 0.15);
+
     box-shadow:
         0 10px 35px rgba(0, 0, 0, 0.7),
         0 0 25px rgba(124, 58, 237, 0.35);
-    z-index: 1;
+
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
 }
 
 .imageWrapper img {
@@ -87,13 +101,20 @@
     transform: scale(1.09);
 }
 
-.imageWrapper:hover {
-    border-color: rgba(124, 58, 237, 0.85);
+@media (hover: hover) {
+    .block:hover .imageWrapper {
+        border-color: rgba(124, 58, 237, 0.85);
+        box-shadow:
+            0 15px 45px rgba(0, 0, 0, 0.8),
+            0 0 40px rgba(124, 58, 237, 0.6);
+    }
 }
 
-/* TEXT */
+/* ===============================
+   TEXT
+================================ */
 .block p {
-    font-size: clamp(22px, 3vw, 30px);
+    font-size: 24px;
     font-weight: 800;
     letter-spacing: 1px;
     color: #f1f5f9;
@@ -101,7 +122,9 @@
     z-index: 1;
 }
 
-/* THEMES */
+/* ===============================
+   THEMES
+================================ */
 .heroes {
     background: linear-gradient(
         135deg,
@@ -128,10 +151,71 @@
     background: radial-gradient(circle at top, rgba(239, 68, 68, 0.35), transparent 70%);
 }
 
-/* MEDIA QUERY для планшетов и смартфонов */
+/* ===============================
+   RESPONSIVE
+================================ */
+
+/* ≤ 1200px */
+@media (max-width: 1200px) {
+    .whichOne {
+        gap: 40px;
+        padding: 48px;
+    }
+
+    .block {
+        width: 260px;
+        height: 340px;
+    }
+
+    .imageWrapper {
+        width: 140px;
+        height: 140px;
+    }
+
+    .block p {
+        font-size: 22px;
+    }
+}
+
+/* ≤ 768px */
 @media (max-width: 768px) {
     .whichOne {
         flex-direction: column;
-        gap: 6vw;
+        padding: 40px 24px;
+        gap: 32px;
+    }
+
+    .block {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        padding: 24px;
+    }
+
+    .imageWrapper {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+/* ≤ 480px */
+@media (max-width: 480px) {
+    .whichOne {
+        padding: 24px 16px;
+    }
+
+    .block {
+        max-width: 280px;
+        padding: 20px;
+        gap: 16px;
+    }
+
+    .imageWrapper {
+        width: 110px;
+        height: 110px;
+    }
+
+    .block p {
+        font-size: 18px;
     }
 }

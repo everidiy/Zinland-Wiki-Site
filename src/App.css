@@ -143,6 +143,6 @@ body {
     }
     
     .sphere {
-        margin-bottom: -23vw;
+        display: none;
     }
 }

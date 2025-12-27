@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react"
 import bossesData from '../data/bosses.json';
 import '../styles/Bosses.css'
-import '../styles/Modal.css'
 
 export default function Bosses() {
     const [bosses, setBosses] = useState([]);
