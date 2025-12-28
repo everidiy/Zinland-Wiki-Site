@@ -64,7 +64,7 @@ export default function Menu() {
       </div>
       <div className="choose">
           <p onClick={() => scrollTo("instruction")}>How to play</p>
-        <a href="/characters" target='_blank' rel='noopener noreferrer'>
+        <a href="/characters">
           Characters
         </a>
       </div>

@@ -14,11 +14,13 @@
 }
 
 .bosses-page > button {
-    display: none; 
+    display: block;
+    margin: 0 auto 20px; 
     padding: 10px 20px;
     border-radius: 12px;
     font-weight: 700;
-    font-size: 14px;
+    text-align: center;
+    font-size: 16px;
     background: linear-gradient(135deg, #ef4444, #b91c1c); 
     color: #f9fafb;
     border: none;
@@ -29,16 +31,6 @@
 .bosses-page > button:hover {
     transform: translateY(-2px);
     background: linear-gradient(135deg, #8f3636, #991b1b); 
-}
-
-@media (max-width: 768px) {
-    .bosses-page > button {
-        display: block; 
-        margin: 0 auto 20px; 
-        padding: 8px 16px;
-        font-size: 15px;
-        text-align: center;
-    }
 }
 
 /* Header */
