@@ -125,7 +125,6 @@ body {
 .tagcloud-wrapper span:hover {
     color: #ddd6fe;
     text-shadow: 0 0 18px rgba(139, 92, 246, 0.7);
-    cursor: pointer;
 }
 
 .instruction h2 {
